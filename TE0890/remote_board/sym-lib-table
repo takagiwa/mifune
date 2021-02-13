@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name TE0890)(type Legacy)(uri C:/Projects/mifune/TE0890/board_lib/TE0890.lib)(options "")(descr ""))
+  (lib (name mifune_TE0890_remote_board-rescue)(type Legacy)(uri ${KIPRJMOD}/mifune_TE0890_remote_board-rescue.lib)(options "")(descr ""))
 )

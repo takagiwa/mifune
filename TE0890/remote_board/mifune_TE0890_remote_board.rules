@@ -1,0 +1,110 @@
+
+(rules PCB mifune_TE0890_remote_board
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 16)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 203.2)
+    (clear 203.4)
+    (clear 101.6 (type smd_to_turn_gap))
+    (clear 50.8 (type smd_smd))
+  )
+  (padstack "Via[0-1]_889:635_um"
+    (shape
+      (circle F.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 889.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_889:635_um" "Via[0-1]_889:635_um" default
+  )
+  (via 
+    "Via[0-1]_889:635_um-kicad_default" "Via[0-1]_889:635_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_889:635_um-Power" "Via[0-1]_889:635_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_889:635_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_889:635_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_889:635_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(C3-Pad1)" "Net-(C4-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)"
+    "/PI_JTAG_OE" "Net-(IC1-Pad12)" "Net-(IC1-Pad9)" "Net-(IC1-Pad5)" "Net-(IC1-Pad2)" "Net-(IC2-Pad3)" "Net-(IC2-Pad5)" "Net-(IC2-Pad6)"
+    "Net-(IC2-Pad8)" "Net-(IC2-Pad9)" "Net-(IC2-Pad11)" /SDA /SCL /GPIO4 "/PI_TXD_SRC" "/PI_RXD_DST"
+    /GPIO17 "/SPI_CE0" /GPIO27 /GPIO22 /GPIO23 /GPIO24 "/PI_JTAG_TDI_SRC" "/PI_JTAG_TDO_DST"
+    "/PI_JTAG_TMS_SRC" "/PI_JTAG_TCK_SRC" /GPIO8 /GPIO7 "Net-(J1-Pad27)" "Net-(J1-Pad28)" /GPIO5 /GPIO6
+    /PWM0 /PWM1 "/SPI_MISO" /GPIO26 "/SPI_MOSI" "/SPI_SCLK" "Net-(J21-Pad1)" "PI_JTAG_TMS"
+    "PI_JTAG_TDI" "PI_JTAG_TDO" "PI_RXD" "PI_JTAG_TCK" "PI_TXD" "Net-(R14-Pad2)" "Net-(R14-Pad1)" "Net-(R15-Pad2)"
+    "Net-(R15-Pad1)" "Net-(R16-Pad1)" "Net-(R16-Pad2)" "Net-(R17-Pad2)" "Net-(R17-Pad1)" "Net-(R18-Pad1)" "Net-(R18-Pad2)" "Net-(R19-Pad2)"
+    "Net-(R19-Pad1)" "Net-(U1-Pad1)" "Net-(U2-Pad9)" "Net-(U2-Pad11)" "PORT_D7" "PORT_E7" "PORT_D3" "PORT_E3"
+    "PORT_D6" "PORT_E6" "PORT_D2" "PORT_E2" "PORT_D5" "PORT_E5" "PORT_D1" "PORT_E1"
+    "PORT_D4" "PORT_E4" "PORT_D0" "PORT_E0" "PORT_C7" "PORT_F7" "PORT_C3" "PORT_F3"
+    "PORT_C6" "PORT_F6" "PORT_C2" "PORT_F2" "PORT_C5" "PORT_F5" "PORT_C1" "PORT_F1"
+    "PORT_C4" "PORT_F4" "PORT_C0" "PORT_F0" "PORT_B7" "PORT_G7" "PORT_B3" "PORT_G3"
+    "PORT_B6" "PORT_G6" "PORT_B2" "PORT_G2" "PORT_B5" "PORT_G5" "PORT_B1" "PORT_G1"
+    "PORT_B4" "PORT_G4" "PORT_B0" "PORT_G0" "PORT_A7" "PORT_H7" "PORT_A3" "PORT_H3"
+    "PORT_A6" "PORT_H6" "PORT_A2" "PORT_H2" "PORT_A5" "PORT_H5" "PORT_A1" "PORT_H1"
+    "PORT_A4" "PORT_H4" "PORT_A0" "PORT_H0" "Net-(J21-Pad6)" "Net-(J21-Pad5)" "Net-(J21-Pad4)" "Net-(J21-Pad3)"
+    "Net-(J21-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D7-Pad2)" "Net-(D8-Pad2)" "Net-(IC1-Pad3)" "Net-(IC2-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    GND +3.3VA +3V3 +5V +5VD +3.3VP
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 406.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

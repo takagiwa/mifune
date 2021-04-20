@@ -1,4 +1,4 @@
-update=2021/02/07 17:38:13
+update=2021/04/15 18:06:48
 version=1
 last_client=kicad
 [general]
@@ -12,21 +12,11 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=mifune_TE0890_remote_board.net
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -39,8 +29,8 @@ MinMicroViaDiameter=0.23
 MinMicroViaDrill=0.08
 MinHoleToHole=0.25
 TrackWidth1=0.2032
-ViaDiameter1=0.889
-ViaDrill1=0.635
+ViaDiameter1=0.5
+ViaDrill1=0.2
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -75,11 +65,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -239,8 +229,8 @@ Enabled=0
 Name=Default
 Clearance=0.2032
 TrackWidth=0.2032
-ViaDiameter=0.889
-ViaDrill=0.635
+ViaDiameter=0.5
+ViaDrill=0.2
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
@@ -250,10 +240,20 @@ dPairViaGap=0.25
 Name=Power
 Clearance=0.2032
 TrackWidth=0.4064
-ViaDiameter=0.889
-ViaDrill=0.635
+ViaDiameter=0.6
+ViaDrill=0.2
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1

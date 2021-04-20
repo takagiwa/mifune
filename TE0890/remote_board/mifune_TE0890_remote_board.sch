@@ -1525,4 +1525,78 @@ F 3 "~" H 9150 5900 50  0001 C CNN
 	1    9150 5900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J25
+U 1 1 60467AFC
+P 6350 6150
+F 0 "J25" H 6430 6192 50  0000 L CNN
+F 1 "Conn_01x01" H 6430 6101 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6350 6150 50  0001 C CNN
+F 3 "~" H 6350 6150 50  0001 C CNN
+	1    6350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J24
+U 1 1 60467D17
+P 6350 5900
+F 0 "J24" H 6430 5942 50  0000 L CNN
+F 1 "Conn_01x01" H 6430 5851 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6350 5900 50  0001 C CNN
+F 3 "~" H 6350 5900 50  0001 C CNN
+	1    6350 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J23
+U 1 1 60467E87
+P 6350 5650
+F 0 "J23" H 6430 5692 50  0000 L CNN
+F 1 "Conn_01x01" H 6430 5601 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6350 5650 50  0001 C CNN
+F 3 "~" H 6350 5650 50  0001 C CNN
+	1    6350 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J22
+U 1 1 60467FF2
+P 6350 5400
+F 0 "J22" H 6430 5442 50  0000 L CNN
+F 1 "Conn_01x01" H 6430 5351 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6350 5400 50  0001 C CNN
+F 3 "~" H 6350 5400 50  0001 C CNN
+	1    6350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 604681BD
+P 6050 6250
+F 0 "#PWR022" H 6050 6000 50  0001 C CNN
+F 1 "GND" H 6055 6077 50  0000 C CNN
+F 2 "" H 6050 6250 50  0001 C CNN
+F 3 "" H 6050 6250 50  0001 C CNN
+	1    6050 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 6250 6050 6150
+Wire Wire Line
+	6050 5400 6150 5400
+Wire Wire Line
+	6150 5650 6050 5650
+Connection ~ 6050 5650
+Wire Wire Line
+	6050 5650 6050 5400
+Wire Wire Line
+	6150 5900 6050 5900
+Connection ~ 6050 5900
+Wire Wire Line
+	6050 5900 6050 5650
+Wire Wire Line
+	6150 6150 6050 6150
+Connection ~ 6050 6150
+Wire Wire Line
+	6050 6150 6050 5900
 $EndSCHEMATC

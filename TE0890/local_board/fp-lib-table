@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name TE0890)(type KiCad)(uri C:/Projects/mifune/TE0890/board_lib/TE0890.pretty)(options "")(descr ""))
+  (lib (name "TE0890")(type "KiCad")(uri "D:/Projects/mifune/TE0890/board_lib/TE0890.pretty")(options "")(descr ""))
 )
